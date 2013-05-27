@@ -1,0 +1,14 @@
+---
+title: 議事録
+---
+
+<ul>
+<% sitemap.resources
+   .select { |r| r.path.match(/^group\/minutes\/[^\/]+\.html/) }
+   .reject { |r| r.path == "group/minutes/index.html" }
+   .sort_by { |r| r.path }
+   .reverse
+   .each do |r|%>
+             <li><%= link_to(r.metadata[:page]["title"], "/" + r.path) %></li>
+<% end %>
+</ul>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= data.page.title %> : 日本 Cloud Foundry グループ</title>
+    
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+  
+  <body class="<%= page_classes %>">
+
+  <nav>
+    <p class="home"><a href="/"><img src="/images/logo_small.png" alt="ホーム"></a></p>
+    <ul>
+      <li><a href="/group/">運営情報</a>
+        <ul>
+          <li><a href="/group/minutes/">議事録</a>
+            <ul>
+<% sitemap.resources
+   .select { |r| r.path.match(/^group\/minutes\/[^\/]+\.html/) }
+   .reject { |r| r.path == "group/minutes/index.html" }
+   .sort_by { |r| r.path }
+   .reverse
+   .each do |r|%>
+             <li><%= link_to(r.metadata[:page]["title"], "/" + r.path) %></li>
+<% end %>
+            </ul>
+          </li>
+          <li><a href="/group/regulations.html">会則</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <article>
+
+  <ul id="breadcrumb">
+<%=
+  pages = {}
+  sitemap.resources.each do |r|
+    pages[r.path] = r
+  end
+
+  paths = current_page.path.split("/")
+  links = [{:title => pages["index.html"].metadata[:page]["title"], :path => "/"}]
+  (paths.size - (paths.last == "index.html" ? 2 : 1)).times do |i|
+    path = paths[0..i].join("/")
+    path += "/index.html"
+    links << {
+      :title => pages[path].metadata[:page]["title"],
+      :path =>  "/" + path.gsub(/\/index.html$/, "")
+    }
+  end
+
+  links.map { |link|
+    "<li>" + link_to(link[:title], link[:path]) + "</li>"
+  }.join("\n")
+%>
+  </ul>
+
+     <h1><%= current_page.data.title %></h1>
+
+     <% if current_page.data.attr %>
+     <table id="attr">
+     <% current_page.data.attr.each do |key, value| %>
+     <tr>
+     <th><%= key %></th>
+     <td>
+     <% if value.is_a? String %>
+     <%= value %>
+     <% elsif value.is_a? Array %>
+     <ul>
+     <% value.each do |v| %>
+     <li><%= v %></li>
+     <% end %>
+     </ul>
+     <% end %>
+     </td>
+     <% end %>
+     </table>
+     <% end %>
+
+    <%= yield %>
+  </article>
+  <div style="clear:both"> </div>
+
+  <footer>&copy; 2013 <a href="/group">日本 Cloud Foundry グループ</a></footer>
+
+  </body>
+</html>
