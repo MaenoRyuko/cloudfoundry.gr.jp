@@ -4,11 +4,10 @@ html {
    min-height: 100%;
    margin: 0px;
    padding: 0px;
-   background: #805050;
-   background: linear-gradient(top, #805050 0%,#cf3031 50px,#ffac1c 130px,rgba(255,255,255,0) 300px);
-   background: -webkit-linear-gradient(top, #805050 0%,#cf3031 50px,#ffac1c 130px,rgba(255,255,255,0) 300px);
-   background: -ms-linear-gradient(top, #805050 0%,#cf3031 50px,#ffac1c 130px,rgba(255,255,255,0) 300px);
-   border-top: 5px solid black;
+   background: #808080;
+   background: linear-gradient(top, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
+   background: -webkit-linear-gradient(top, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
+   background: -ms-linear-gradient(top, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
 }
 
 
@@ -254,7 +253,7 @@ footer {
 
 body.index {
    background: rgba(255, 255, 255, 0.7);
-   margin-top: 80px;
+   margin-top: 40px;
    border-top: 5px solid black;
    padding : 0em;
    width: 100%;
@@ -297,6 +296,7 @@ body.index {
       float: left;
       width: 30.33%;
       margin: 0px 1.4% 0px 1.4%;
+      background: rgba(255, 255, 240, 0.7);
       background: linear-gradient(top, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
       background: -webkit-linear-gradient(top, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
       background: -ms-linear-gradient(top, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
