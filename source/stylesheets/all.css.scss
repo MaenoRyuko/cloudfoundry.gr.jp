@@ -46,7 +46,8 @@ nav {
       list-style: none;
    }
 
-   > ul {
+   > div > div >ul, 
+   > ul {  /* for blogger */
       > li {
          text-align: center;
          font-weight: bolder;
