@@ -4,10 +4,10 @@ html {
    min-height: 100%;
    margin: 0px;
    padding: 0px;
-   background: #808080;
-   background: linear-gradient(top, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
+   background: rgb(255,109,0);
    background: -webkit-linear-gradient(top, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
    background: -ms-linear-gradient(top, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
+   background: linear-gradient(to bottom, #805050 0%,#cf3031 10px,#ffac1c 90px,rgba(255,255,255,0) 260px);
 }
 
 
@@ -27,15 +27,14 @@ nav {
    margin: -10px 0em 0em 2em;
    background: rgba(255, 255, 255, 0.8);
    background:
-      linear-gradient(top, rgba(20,0,0,0.7) 0px, rgba(20,0,0,0.7) 10px, rgba(20,0,0,0) 0px),
-      linear-gradient(top, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.8) 100%);
-   background:
       -webkit-linear-gradient(top, rgba(20,0,0,0.7) 0px, rgba(20,0,0,0.7) 10px, rgba(20,0,0,0) 0px),
       -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.8) 100%);
    background:
       -ms-linear-gradient(top, rgba(20,0,0,0.7) 0px, rgba(20,0,0,0.7) 10px, rgba(20,0,0,0) 0px),
       -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.8) 100%);
-
+   background:
+      linear-gradient(to bottom, rgba(20,0,0,0.7) 0px, rgba(20,0,0,0.7) 10px, rgba(20,0,0,0) 0px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 10px, rgba(255, 255, 255, 0.5) 0px, rgba(255, 255, 255, 0.8) 100%);
    box-shadow: 0px 0px 8px #000;
 
    ul {
@@ -54,9 +53,9 @@ nav {
          font-size: larger;
          line-height: 160%;
          background: rgba(0,0,20,0.8);
-         background: linear-gradient(top, rgba(0,0,20,0.9) 0px, rgba(0,0,20,0.8) 1.6em, rgba(30,30,50,0.6) 0px, rgba(30,30,50,0.3) 100%);
          background: -webkit-linear-gradient(top, rgba(0,0,20,0.9) 0px, rgba(0,0,20,0.8) 1.6em, rgba(30,30,50,0.6) 0px, rgba(30,30,50,0.3) 100%);
          background: -ms-linear-gradient(top, rgba(0,0,20,0.9) 0px, rgba(0,0,20,0.8) 1.6em, rgba(30,30,50,0.6) 0px, rgba(30,30,50,0.3) 100%);
+         background: linear-gradient(to bottom, rgba(0,0,20,0.9) 0px, rgba(0,0,20,0.8) 1.6em, rgba(30,30,50,0.6) 0px, rgba(30,30,50,0.3) 100%);
          color: white;
 
          > ul {
@@ -145,12 +144,13 @@ article {
       display: block;
       width: 100%;
       margin: 0em;
-      background:
-         linear-gradient(top, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0.8) 100%);
+      background: rgba(255, 255, 255, 0.8);
       background:
          -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0.8) 100%);
       background:
          -ms-linear-gradient(top, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0.8) 100%);
+      background:
+         linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0px, rgba(255, 255, 255, 0.8) 100%);
       p img {
          max-width: 100px;
       }
@@ -298,9 +298,9 @@ body.index {
       width: 30.33%;
       margin: 0px 1.4% 0px 1.4%;
       background: rgba(255, 255, 240, 0.7);
-      background: linear-gradient(top, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
       background: -webkit-linear-gradient(top, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
       background: -ms-linear-gradient(top, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
+      background: linear-gradient(to bottom, rgba(255, 255, 240, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%) ;
       color: black;
       min-width: 15em;
       border-radius: 3px;
