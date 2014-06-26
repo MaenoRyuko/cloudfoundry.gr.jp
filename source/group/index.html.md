@@ -28,4 +28,4 @@ title: 運営情報
 
 ## 連絡先
 
-日本 Cloud Foundry グループ会長 中川　真一 [nakagawa.shinichi@lab.ntt.co.jp](mailto:nakagawa.shinichi@lab.ntt.co.jp)
+日本 Cloud Foundry グループ会長 小久保　祐一 [kokubo.yuichi@po.ntts.co.jp](mailto:kokubo.yuichi@po.ntts.co.jp)
