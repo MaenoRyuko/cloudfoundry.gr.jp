@@ -23,7 +23,7 @@ title: 運営情報
 
 日本 Cloud Foundry グループへの参加をご希望の方は運営用メーリングリストへの登録登録の上、その旨をお知らせください。
 
-* [日本 Cloud Foundry グループ運営 ML](https://groups.google.com/forum/?fromgroups#!forum/cloudfoundrygrjp)
+* [日本 Cloud Foundry グループ運営 ML](https://groups.google.com/forum/?fromgroups#!forum/cfgrjp)
 
 
 ## 連絡先
